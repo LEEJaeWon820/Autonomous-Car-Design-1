@@ -1,4 +1,4 @@
-char value ; abc
+char value = 'a';
 
 void setup(){
   Serial.begin(9600);
@@ -6,8 +6,8 @@ void setup(){
 
 void loop(){
   if(Serial.available()>0){
-    value=Serial.read();
-    Serial.print("value:");
+    value = Serial.read();
+    Serial.print("value: ");
     Serial.println(value);
    }
-}   
+}       
